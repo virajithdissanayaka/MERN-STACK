@@ -1,8 +1,9 @@
 const express = require('express')
-
+const {
+    createWorkout,
+} = require('../controllers/workoutController')
 
 const router = express.Router()
-
 
 //GET all workouts
 router.get('/', (req,res) => {
@@ -15,9 +16,7 @@ router.get('/:id', (req,res) => {
 }) 
 
 //POST a new workout
-router.post('/', async (req,res) => {
-    
-})
+router.post('/',createWorkout)
 
 //DELETE a workout
 router.delete('/:id', (req,res) => {
