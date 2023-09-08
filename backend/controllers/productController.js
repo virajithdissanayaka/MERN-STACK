@@ -1,11 +1,6 @@
 const mongoose = require('mongoose')
 const Product = require('../models/ProductModel')
 
-//for image uploading
-const cors = require('cors')
-const multer = require('multer')
-const path = require('path')
-
 //get all products
 const getProducts = async (req,res) => {
     const products = await Product.find({}).sort({createdAt: -1})
@@ -16,29 +11,15 @@ const getProducts = async (req,res) => {
 
 //enter a new product
 const createProduct = async (req,res) => {
-    const {name, price, details} = req.body
+    const {name, price, details, imagelink} = req.body
 
     //add doc to db
     try{
-        const product = await Product.create({name, price, details})
+        const product = await Product.create({name, price, details, imagelink})
         res.status(200).json(product)
     }catch (error) {
         res.status(400).json({error: error.message})
     }
-
-    //for image
-    const storage = multer.diskStorage({
-        destination: (req, file, cb) => {
-            cb(null, 'public/images')
-        },
-        filename: (req, file, cb) => {
-            cb(null, file.fieldname + "_" + Date.now() + path.extname(file.originalname))
-        }
-    })
-    
-    const upload = multer({
-        storage: storage
-    })
 }
 
 //delete a product

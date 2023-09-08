@@ -2,6 +2,7 @@ import React,{ useState } from "react"
 
 const ProductForm = () => {
     const [name,setName] = useState('')
+    const [imagelink,setImagelink] = useState('')
     const [price,setPrice] = useState('')
     const [details,setDetails] = useState('')
     const [error,setError] = useState(null)
@@ -11,7 +12,7 @@ const ProductForm = () => {
         e.preventDefault()
         //avoid refreshing the page
 
-        const product = {name, price, details}
+        const product = {name, price, details, imagelink}
 
         const response = await fetch('/api/products', {
             method: 'POST',
@@ -27,6 +28,7 @@ const ProductForm = () => {
         }
         if (response.ok){
             setName('')
+            setImagelink('')
             setPrice('')
             setDetails('')
             setError(null)
@@ -47,9 +49,16 @@ const ProductForm = () => {
 
            <label>Price:</label>
            <input
-                type="number"
+                type="text"
                 onChange={(e) => setPrice(e.target.value)}
                 value={price}
+           />
+
+           <label>Image Link:</label>
+           <input
+                type="text"
+                onChange={(e) => setImagelink(e.target.value)}
+                value={imagelink}
            />
 
            <label>Details:</label>

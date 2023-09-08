@@ -3,11 +3,11 @@
 
 /* layout */
 :root {
-  --primary: #1aac83;
+  --primary: #ff062f;
   --error: #e7195a;
 }
 body {
-  background: #c4b7a6 !important;
+  background: #ffd6d6 !important;
   margin: 0;
   font-family: 'DM Serif Display', serif;
   font-family: 'Lilita One', cursive;
@@ -27,12 +27,14 @@ body {
   gap: 100px;
 }
 .workout-details {
-  background: #fff;
-  border-radius: 4px;
+  background: #292727;
+  border-radius: 5px;
+  width: 300px;
+  height: 150px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.0);
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
@@ -85,8 +87,10 @@ div.error {
   margin: 20px 0;
 }
 .product-details {
-  background: #e6e2d3;
+  background: #ffb19b;
   border-radius: 4px;
+  width: 400px;
+  height: 400px;
   margin: 20px auto;
   padding: 20px;
   position: relative;
