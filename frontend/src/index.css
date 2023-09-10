@@ -7,7 +7,7 @@
   --error: #e7195a;
 }
 body {
-  background: #ffd6d6 !important;
+  /* background: #ffd6d6 !important; */
   margin: 0;
   font-family: 'DM Serif Display', serif;
   font-family: 'Lilita One', cursive;
@@ -87,7 +87,7 @@ div.error {
   margin: 20px 0;
 }
 .product-details {
-  background: #ffb19b;
+  background: #312f2d;
   border-radius: 4px;
   width: 400px;
   height: 400px;
@@ -95,6 +95,11 @@ div.error {
   padding: 20px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.product-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #fffefe;
 }
 .product-details h4 {
   margin: 0 0 10px 0;

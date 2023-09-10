@@ -99,6 +99,7 @@ export default function AddEmployee() {
   }
   return (
     <div className='container'>
+      <h2 className="salesagentheader">Our Sales Agents</h2>
       <button className='btn btn-add' onClick={() => setAddSection(true)}>Add</button>
 
       {
