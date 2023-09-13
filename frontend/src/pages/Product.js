@@ -14,6 +14,7 @@ const Product = () => {
 
       if (response.ok) {
         setProducts(json)
+        
       }
     }
 

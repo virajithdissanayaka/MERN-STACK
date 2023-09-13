@@ -93,7 +93,7 @@ div.error {
   height: 400px;
   margin: 20px auto;
   padding: 20px;
-  position: relative;
+  /* position: relative; */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
 }
 .product-details p {

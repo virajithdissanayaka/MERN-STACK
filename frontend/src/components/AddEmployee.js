@@ -51,11 +51,6 @@ export default function AddEmployee() {
     const data = await axios.get("/")
 
       console.log(data)
-      // const len = res.data.length
-      // console.log(len)
-      // setDataList(data.data)
-      // setDataList(res.data)
-      // setDataList(data.data)
       if (data.data.success) {
         setDataList(data.data.data)
       
