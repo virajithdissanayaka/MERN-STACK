@@ -84,7 +84,6 @@ body{
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   border-radius: 5px;
 }
-
 .tableContainer table thead tr th{
   min-width: 200px;
   padding: 7px ;
@@ -102,6 +101,33 @@ body{
   text-align: center;
 }
 .tableContainer table tbody tr td{
+  border-bottom: 1px solid #080401;
+}
+.tableContainer1{
+
+  /* margin: 10%; */
+  margin-top: 50px;
+  margin-left: 350px;
+  /* box-shadow: 5px 5px 10px rgba(0,0,0,0.2); */
+  border-radius: 5px;
+}
+.tableContainer1 table thead tr th{
+  min-width: 200px;
+  padding: 7px ;
+  text-align: center;
+}
+.tableContainer1 table thead tr{
+  background-color: #ffbcbc;
+}
+.tableContainer1 table tbody tr{
+  border: 1px solid #c9c5c2;
+}
+.tableContainer1 table tbody tr td{
+  min-width: 200px;
+  padding: 7px ;
+  text-align: center;
+}
+.tableContainer1 table tbody tr td{
   border-bottom: 1px solid #080401;
 }
 .btn-edit,

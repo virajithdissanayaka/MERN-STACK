@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 
 // components
-import ProductDetails from "../components/productDetails"
-import ProductForm from "../components/ProductForm"
+import ProductDetails from "../components/Products/productDetails"
+import ProductForm from "../components/Products/ProductForm"
 
 const Product = () => {
   const [products, setProducts] = useState(null)
