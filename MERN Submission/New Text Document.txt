@@ -1,0 +1,3 @@
+User: Admin
+Email: admin@admin.com
+Pw: admin
